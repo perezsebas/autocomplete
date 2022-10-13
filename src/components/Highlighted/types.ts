@@ -1,4 +1,4 @@
 export interface IHighlighted {
-    text: string;
-     highlight: string;
-  }
+  text: string;
+  highlight: string;
+}

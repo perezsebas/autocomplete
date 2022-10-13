@@ -1,5 +1,7 @@
 export interface Country {
-  name: {
-    common: string;
-  };
+  name: Name;
+}
+
+interface Name {
+  common: string;
 }
