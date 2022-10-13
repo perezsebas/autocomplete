@@ -7,7 +7,7 @@ function App() {
   const [countries, setCountries] = useState<string[]>([]);
   useEffect(() => {
     const fetchData = async () => {
-      const url = "/v3.1/all";
+      const url = "https://restcountries.com/v3.1/all";
       const reponse = await fetch(url);
       const data = await reponse.json();
       setCountries(data.map((country: Country) => country.name.common));
